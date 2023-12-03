@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{13e37290-deaa-4c37-9c83-f8b079b15bd8}</ProjectGuid>
-    <RootNamespace>数据结构</RootNamespace>
+    <ProjectGuid>{177e552a-b2f2-4384-b0cf-caa8eaedd7b3}</ProjectGuid>
+    <RootNamespace>C11Propeties</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -130,7 +130,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test.h" />
+    <None Include="Record.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutChar.h" />
+    <ClInclude Include="Mutable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

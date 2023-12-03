@@ -1,23 +1,23 @@
-﻿#include <bitset>
-#include <iostream>
+﻿#include <iostream>
+#include <cstdarg>
+
+// 可变参数函数示例
+double average(int count, ...) {
+    va_list args;  // 定义一个va_list对象来存储可变参数
+    va_start(args, count);  // 初始化args，使其指向可变参数列表的第一个参数
+
+    double sum = 0;
+    for (int i = 0; i < count; ++i) {
+        sum += va_arg(args, double);  // 从可变参数列表中获取参数
+    }
+
+    va_end(args);  // 结束对可变参数的访问
+
+    return sum / count;
+}
 
 int main() {
-    // 创建一个包含8位的bitset
-    std::bitset<8> myBitset;
-
-    // 设置位
-    myBitset.set(1);
-    myBitset.set(3);
-    myBitset.set(5);
-
-    // 输出二进制表示
-    std::cout << "Binary representation: " << myBitset << std::endl;
-
-    // 获取位的值
-    std::cout << "Bit at position 2: " << myBitset.test(2) << std::endl;
-
-    // 以整数形式输出
-    std::cout << "Integer representation: " << myBitset.to_ulong() << std::endl;
+    std::cout << "Average: " << average(3, 1.0, 2.0, 3.0) << std::endl;
 
     return 0;
 }

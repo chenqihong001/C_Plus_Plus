@@ -20,7 +20,15 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test.h">
+    <None Include="Record.md">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutChar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutable.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
