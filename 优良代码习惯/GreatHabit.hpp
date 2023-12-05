@@ -19,6 +19,8 @@ void testGreatHabit()
 	10.使用结构化绑定
 	11.在想要从函数返回多个值时，使用多个输出参数
 	12.使用constexpr在运行时执行本可以在编译时完成的工作
+	13.忘记标记析构函数为virtual，1.对于通过子类指针创建子类对象，对象销毁后会调用，子类和父类的构造函数 2.对通过父类指针创建
+	子类对象，对象销毁后，则只会调用父类的析构函数
 	*/
 }
 void test3(const std::vector<int>&data)
@@ -90,3 +92,18 @@ void testConstexpr()
 	const int n = 10;//编译时确认其值
 	std::cout << sum_of_valTo100(100);
 }
+//13.忘记标记析构函数为virtual
+class A {
+public:
+	virtual ~A()
+	{
+		std::cout << "A析构函数调用" << std::endl;
+	}
+};
+class B :public A {
+public:
+	 ~B()override//添加override能够提醒父类的析构函数为virtual
+	{
+		std::cout << "B析构函数调用" << std::endl;
+	}
+};

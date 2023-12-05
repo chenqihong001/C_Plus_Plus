@@ -135,6 +135,8 @@
   <ItemGroup>
     <ClInclude Include="AboutChar.h" />
     <ClInclude Include="Mutable.h" />
+    <ClInclude Include="Override.h" />
+    <ClInclude Include="Virtual.h" />
     <ClInclude Include="VSDebug.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

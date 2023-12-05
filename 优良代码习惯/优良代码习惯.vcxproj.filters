@@ -23,5 +23,8 @@
     <ClInclude Include="GreatHabit.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="GreatHabit2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
