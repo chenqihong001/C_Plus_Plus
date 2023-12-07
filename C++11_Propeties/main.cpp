@@ -1,12 +1,14 @@
 ﻿#include <iostream>
 #include "AboutChar.h"
 #include "VSDebug.h"
-//#include "Virtual.h"
+struct Num {
+	int age;
+	double sai;
+};
 int main() {
-	int num{};
-	int b{};
-	int arr[] = { 0 };
-	std::string strs[10];
-	std::cout << num;
+	Num num{0};
+	std::cout << num.age << "\n";
+	std::cout << num.sai << "\n";
+
 	return 0;
 }
