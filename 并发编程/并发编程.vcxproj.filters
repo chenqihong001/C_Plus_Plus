@@ -29,5 +29,8 @@
     <ClInclude Include="Thread_6_4.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Thread_6_5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

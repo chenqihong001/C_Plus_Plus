@@ -1,10 +1,10 @@
 ﻿#include <stdio.h>
 #include <string>
 #include <iostream>
-#include "Thread_6_4.h"
+#include "Thread_6_5.h"
 int main()
 {
-    Main_6_4();
+    Main_6_5();
     return 0;
 }
 
