@@ -1,9 +1,9 @@
 ﻿#include <iostream>
 #include <array>
 #include "day9.h"
+
 int main()
 {
-    Day9CopyQuestion t;
-    Day9CopyQuestion t2(t);
-    Day9CopyQuestion t3 = t2;
+	day9::AggregateTest aggregate{ 18,{1,2,3},"小黑子"};
+	aggregate.Show();
 }
