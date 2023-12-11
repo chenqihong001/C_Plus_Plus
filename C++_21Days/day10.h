@@ -9,6 +9,15 @@
 		解决：1.main中使用::，pig.Animal::CoverFunc(true);
 			 2.子类中使用using解除隐藏，using Animal::CoverFunc;
 			 3.子类中覆盖所有的重载版本
+	4.切除问题
+	5.多继承
+	6.使用final禁止继承
+*/
+
+/*应该*/
+/*
+	1.要建立is-a关系，务必建立public继承
+	2.要建立has-a关系，务必建立private或protected继承
 */
 using std::cout;
 using std::endl;
@@ -35,7 +44,7 @@ public:
 		std::cout << "Animal重载版本覆盖测试" << endl;
 	}//由于子类的覆盖，导致此方法失效
 };
-class Pig :public Animal {
+class Pig final :public Animal {
 public:
 	using Animal::CoverFunc;
 	Pig() = default;
@@ -65,3 +74,20 @@ public:
 
 	}
 };
+//切除问题，要避免切除问题，不要按值传递参数
+class Parent{
+public:
+	int a{1};
+	int b{2};
+
+};
+class Son final :public Parent
+{
+public:
+	int c{3};
+};
+void CutTest()
+{
+	Son s;
+	Parent p = s;//切除问题
+}
