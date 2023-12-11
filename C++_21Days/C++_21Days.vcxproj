@@ -131,6 +131,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="day10.h" />
     <ClInclude Include="day6.h" />
     <ClInclude Include="day8.h" />
     <ClInclude Include="day9.h" />
