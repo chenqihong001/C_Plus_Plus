@@ -1,11 +1,13 @@
 ﻿#include <iostream>
 #include "AboutChar.h"
 #include "VSDebug.h"
-struct Num {
+struct Num
+{
 	int age;
 	double sai;
 };
-int main() {
+int main()
+{
 	Num num{0};
 	std::cout << num.age << "\n";
 	std::cout << num.sai << "\n";
