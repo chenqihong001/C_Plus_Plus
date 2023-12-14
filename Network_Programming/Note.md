@@ -23,3 +23,20 @@
 7. `int connect(SOCKET s,const struct sockaddr* name,int namelen);`
 8. `int closesocket(SOCKET s);`
 Windows区分《文件句柄》和《套接字句柄》
+
+## Server
+
+1. WSADATA结构体（含有Winsock初始化信息）
+2. Winsock初始化,WSAStartup(版本号，信息对象地址);
+3. 初始化网络结构体地址Sin_addr
+4. bind(),绑定套接字句柄和网络结构体地址
+5. listen(servSocket,MAXSize);->listen设置套接字为监听状态
+6. accept阻塞等待，返回连接的client套接字
+7. send利用得到的client端的套接字进行通信
+
+## Client
+
+1. WSAStartup()初始化
+2. 创建socket套接字
+z
+> `利用套接字在服务器与客户端之间进行信息通讯`
