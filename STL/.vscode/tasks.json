@@ -10,7 +10,9 @@
                 "${file}",
                 "-o",
                 "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
-                "-lws2_32"
+                "-IC:\\Program Files\\MySQL\\MySQL Server 8.0\\include",
+                "-LC:\\Program Files\\MySQL\\MySQL Server 8.0\\lib",
+                "-llibmysql"
             ],
             "options": {
                 "cwd": "${fileDirname}"

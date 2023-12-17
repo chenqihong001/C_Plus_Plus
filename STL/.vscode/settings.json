@@ -1,6 +1,9 @@
 {
     "files.associations": {
+        "functional": "cpp",
         "iostream": "cpp",
+        "typeinfo": "cpp",
+        "ostream": "cpp",
         "array": "cpp",
         "atomic": "cpp",
         "*.tcc": "cpp",
@@ -19,9 +22,14 @@
         "vector": "cpp",
         "exception": "cpp",
         "algorithm": "cpp",
+        "iterator": "cpp",
+        "map": "cpp",
         "memory": "cpp",
         "memory_resource": "cpp",
+        "numeric": "cpp",
         "optional": "cpp",
+        "random": "cpp",
+        "set": "cpp",
         "string": "cpp",
         "string_view": "cpp",
         "system_error": "cpp",
@@ -34,11 +42,8 @@
         "istream": "cpp",
         "limits": "cpp",
         "new": "cpp",
-        "ostream": "cpp",
         "sstream": "cpp",
         "stdexcept": "cpp",
-        "streambuf": "cpp",
-        "typeinfo": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "disabled"
+        "streambuf": "cpp"
+    }
 }
