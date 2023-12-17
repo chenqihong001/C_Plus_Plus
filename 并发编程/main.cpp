@@ -1,11 +1,12 @@
 ﻿#include <stdio.h>
 #include <string>
 #include <iostream>
-#include "Thread_6_5.h"
-#include "Thread_6_6.h"
+#include "thread_guard.h"
 int main()
 {
-    Thread_6_Test();
+    Functor f;
+    std::thread th(&Functor::Func, &f, 0);
+    th.join();
     return 0;
 }
 
