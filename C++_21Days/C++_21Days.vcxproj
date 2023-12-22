@@ -134,9 +134,12 @@
     <ClInclude Include="day10.h" />
     <ClInclude Include="day11.h" />
     <ClInclude Include="day12.h" />
+    <ClInclude Include="day14.h" />
+    <ClInclude Include="day15.h" />
     <ClInclude Include="day6.h" />
     <ClInclude Include="day8.h" />
     <ClInclude Include="day9.h" />
+    <ClInclude Include="timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

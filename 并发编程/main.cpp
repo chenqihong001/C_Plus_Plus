@@ -1,12 +1,11 @@
 ﻿#include <stdio.h>
 #include <string>
 #include <iostream>
+#include "Thread_6_7.h"
 #include "thread_guard.h"
 int main()
 {
-    Functor f;
-    std::thread th(&Functor::Func, &f, 0);
-    th.join();
+    Main_6_7();
     return 0;
 }
 

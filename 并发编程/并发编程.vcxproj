@@ -136,6 +136,7 @@
     <ClInclude Include="Thread_6_4.h" />
     <ClInclude Include="Thread_6_5.h" />
     <ClInclude Include="Thread_6_6.h" />
+    <ClInclude Include="Thread_6_7.h" />
     <ClInclude Include="thread_guard.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

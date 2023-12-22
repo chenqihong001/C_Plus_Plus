@@ -38,5 +38,8 @@
     <ClInclude Include="thread_guard.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Thread_6_7.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

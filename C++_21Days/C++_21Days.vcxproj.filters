@@ -38,5 +38,14 @@
     <ClInclude Include="day12.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="day14.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="day15.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
